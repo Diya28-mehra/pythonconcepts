@@ -1,0 +1,65 @@
+
+CLASSES AND OBJECTS 
+
+class details:
+  name="Diya"
+  age=10
+obj=details()
+print(obj.name)
+print(obj.age)
+
+Output:-
+Diya
+10
+
+class details:
+  name="Rohan"
+  age=20
+  def desc(self):
+    print(f" My name is {self.name} and I'm {self.age} years old")
+objc=details()
+objc.desc()
+
+Output:-
+My name is Rohan and I'm 20 years old
+
+
+class person:
+  name="Daina Hayden"
+  occupation="Software Developer"
+  networth=10
+  def info(self):
+    print(f"{self.name} is a {self.occupation}")
+a=person()
+a.info()
+b=person()
+b.name="Shubham"
+b.occupation="Journalist"
+b.info()
+
+Output:-
+Daina Hayden is a Software Developer
+Shubham is a Journalist
+
+
+CONSTRUCTORS
+
+class Person:
+  def __init__(self,n,o):
+    print("Hey I am a person")
+    self.name=n
+    self.occ=o
+  def info(self):
+    print(f"{self.name} is a {self.occ}")
+
+a=Person("Harry","Developer")
+a.info()
+b=Person("Divya","Journalist")
+b.info()
+
+Output:-
+
+Hey I am a person
+Harry is a Developer
+Hey I am a person
+Divya is a Journalist
